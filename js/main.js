@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const offsetY = getComputedStyle(promo).height.slice(0, -2)
     const vh = window.innerHeight / 100
     promo.style.setProperty('--vh', `${vh}px`)
+    menuMobile.style.setProperty('--vh', `${vh}px`)
 
     scrollBtn.addEventListener('click', () => {
         gsap.to(window, { duration: 1, scrollTo: offsetY })
